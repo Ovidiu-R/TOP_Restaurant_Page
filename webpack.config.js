@@ -3,10 +3,11 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 
 module.exports = {
+  mode: 'production',
   entry: './src/index.js',
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Output Management',
+      title: 'RestaurantPage',
       template: './src/index.html'
     }),
   ],
@@ -15,4 +16,16 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     clean: true,
   },
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        type: 'asset/resource',
+      },
+    ]
+  }
 };

@@ -1,24 +1,56 @@
+@font-face {
+    font-family: 'Lobster';
+    src: url('../media/Lobster-Regular.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+  }
+
 body {
     background-color: limegreen;
+}
+
+header {
+    display: grid;
+
+}
+
+nav {
+    justify-self: center;
+    margin-top: 20px;
+}
+
+button {
+    height: 60px;
+    width: 200px;
+    border-radius: 12px;
+    background-color: darkgreen;
+    font-size: 30px;
+    color: white;
+    margin: 0 20px;
 }
 
 h1 {
     text-align: center;
     font-size: 60px;
+    margin-top: 50px;
+    font-family: 'Lobster';
+
 }
 
 img {
     display: inline;
-    width: 600px;
+    width: 700px;
     margin: 0 auto;
 }
 
 p {
     display: inline;
     line-height: 1.5;
+    font-family: 'Lobster';
     font-size: 30px;
     align-self: center;
-    margin-right: 180px;
+    margin-left: -90px;
+    margin-right: 220px;
 }
 
 #main {

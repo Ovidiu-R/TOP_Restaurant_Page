@@ -1,1 +1,3 @@
-console.log("RANDOM MESSAGE KSDJFKDSJFKDSJF");
+import {loadHomePage} from './startup';
+
+loadHomePage();
