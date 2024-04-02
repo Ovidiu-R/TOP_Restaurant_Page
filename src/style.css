@@ -1,0 +1,28 @@
+body {
+    background-color: limegreen;
+}
+
+h1 {
+    text-align: center;
+    font-size: 60px;
+}
+
+img {
+    display: inline;
+    width: 600px;
+    margin: 0 auto;
+}
+
+p {
+    display: inline;
+    line-height: 1.5;
+    font-size: 30px;
+    align-self: center;
+    margin-right: 180px;
+}
+
+#main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+}
