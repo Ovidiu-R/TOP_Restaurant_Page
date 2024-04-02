@@ -27,6 +27,14 @@ button {
     font-size: 30px;
     color: white;
     margin: 0 20px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    border: 1px transparent solid;
+}
+
+button:active {
+    box-shadow: none;
+    transform: translateY(2px);
 }
 
 h1 {
@@ -43,7 +51,7 @@ img {
     margin: 0 auto;
 }
 
-p {
+#headline {
     display: inline;
     line-height: 1.5;
     font-family: 'Lobster';
@@ -57,4 +65,9 @@ p {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 100px;
+}
+
+.menu {
+    display: grid;
+    margin: 70px auto;    
 }
