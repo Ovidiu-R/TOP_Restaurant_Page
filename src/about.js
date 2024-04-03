@@ -1,5 +1,8 @@
+import './style.css';
+
 const loadAbout = () => {
     content.textContent = "";
+    const wrapper = document.createElement('div')
     const section1 = document.createElement('h2');
     const paragraph1 = document.createElement('p');
     const section2 = document.createElement('h2');
@@ -9,6 +12,7 @@ const loadAbout = () => {
     const section4 = document.createElement('h2');
     const paragraph4 = document.createElement('p');
 
+    wrapper.classList.add('about');
     section1.textContent = 'Where Italian Tradition Meets Japanese Innovation:';
     paragraph1.textContent = "Welcome to Trattoria Sakura, the epitome of culinary fusion where the rich heritage of Italian cuisine harmoniously blends with the artistry and innovation of Japanese culinary techniques. At Trattoria Sakura, we redefine the dining experience, offering a tantalizing journey for your taste buds in an atmosphere that resonates with modernity and warmth.";
     section2.textContent = 'Innovation Through Fusion:';
@@ -18,10 +22,9 @@ const loadAbout = () => {
     section4.textContent = 'Beyond Buzzwords:';
     paragraph4.textContent = "At Trattoria Sakura, we go beyond the buzzwords to deliver an exceptional dining experience that transcends expectations. From our commitment to using only the freshest and highest quality ingredients to our dedication to impeccable service, every aspect of Trattoria Sakura reflects our passion for excellence. We strive to create not just a meal, but a culinary journey that ignites the senses and leaves a lasting impression. Join us at Trattoria Sakura and indulge in the fusion of tradition and innovation, where every dish tells a story and every moment is savored. Experience the magic of Italo-Japanese cuisine in a setting that captivates the senses and leaves you craving more.";
     content.style.marginTop = '100px';
-    content.style.marginLeft = '400px';
-    content.style.marginRight = '400px';
-    content.append(section1, paragraph1, section2, paragraph2, section3, paragraph3, section4, paragraph4);
-    
+
+    wrapper.append(section1, paragraph1, section2, paragraph2, section3, paragraph3, section4, paragraph4)
+    content.append(wrapper);
 }
 
 export {loadAbout};

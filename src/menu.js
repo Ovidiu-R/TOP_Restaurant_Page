@@ -1,3 +1,5 @@
+import './style.css';
+
 const loadMenu = () => {
     content.textContent = "";
     content.style.marginTop = '0px';
